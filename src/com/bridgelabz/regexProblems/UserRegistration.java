@@ -15,7 +15,7 @@ public class UserRegistration {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("enter your password:");
 		String input = scanner.next();
-		String regex = "[A-Z]+[a-zA-z0-9@+_-$]{7,}+$";
+		String regex = "[A-Z]+[a-zA-z0-9@+_-$]{6,}+[0-9]+$";
 		userName(regex, input);
 
 		if (input.matches(regex) == true)
