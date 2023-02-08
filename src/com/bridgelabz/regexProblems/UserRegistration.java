@@ -15,7 +15,7 @@ public class UserRegistration {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("enter your email:");
 		String input = scanner.next();
-		String regex = "^[a-z.]{4,}+([a-z]{3,})*@+[a-z.]{3,}+[a-z.]{3,}+([a-z]{2,})*$";
+		String regex = "^[a-z]{3,}+[.]+([a-z]{3,})*@+[a-z.]{3,}+[a-z.]{3,}+([a-z]{2,})*$";
 		userName(regex, input);
 
 		if (input.matches(regex) == true)
